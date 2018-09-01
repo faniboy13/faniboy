@@ -42,9 +42,11 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZmFuaWJveSIsImEiOiJjamxqNXRtdTAwOGo1M2psZGp1e
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v9',
-    center: [2.3399, 48.8555],
+    center: [39.32830810546875,-6.117342277802711],
     zoom: 12
 });
+    // Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
 
 var distanceContainer = document.getElementById('distance');
 
